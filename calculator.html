@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1> Please click the number </h1>
+        <form name="cal" >
+            <table>
+                <input type="text" name="pro" value="">
+                    <td>
+                        <input type="button" value="1" onClick="document.cal.pro.value+='1'">
+                        <input type="button" value="4" onClick="document.cal.pro.value+='4'">
+                        <input type="button" value="7" onClick="document.cal.pro.value+='7'">
+                        <input type="reset" value="C">
+                    </td>
+                    <td>
+                        <input type="button" value="2" onClick="document.cal.pro.value+='2'">
+                        <input type="button" value="5" onClick="document.cal.pro.value+='5'">
+                        <input type="button" value="8" onClick="document.cal.pro.value+='8'">
+                        <input type="button" value="0" onClick="document.cal.pro.value+='0'">
+                    </td>
+                    <td>
+                        <input type="button" value="3" onClick="document.cal.pro.value+='3'">
+                        <input type="button" value="6" onClick="document.cal.pro.value+='6'">
+                        <input type="button" value="9" onClick="document.cal.pro.value+='9'">
+                        <input type="button" value="=" onClick="document.cal.pro.value=eval(document.cal.pro.value)">
+                    </td>
+                    <td >
+                        <input type="button" value="+" onClick="document.cal.pro.value+='+'">
+                        <input type="button" value="-" onClick="document.cal.pro.value+='-'">
+                        <input type="button" value="*" onClick="document.cal.pro.value+='*'">
+                        <input type="button" value="/" onClick="document.cal.pro.value+='/'">
+                    </td>
+                
+            </table>
+        </form>
+    </div>
+
+    <!-- <div class="main-container">
+        <h1> Please enter the number </h1>
+        <form class="flex-buttons">
+            <input id="firstNumber" placeholder="put firstNumber">
+            <input id="secondNumber" placeholder="put secondNumber">
+        </form>
+
+        <button id="sumButton" onclick="getSum()"> + </button>
+
+        <button id="minusButton" onclick="getMinus()"> - </button>
+
+        <button id="multiButton" onclick="getMulti()"> x </button>
+
+        <button id="dividedButton" onclick="getDivided()"> / </button>
+
+        <div id="output"> </div>
+    </div> -->
+
+    <!-- <script>
+        var firstNumber = document.getElementById("firstNumber");
+        var secondNumber = document.getElementById("secondNumber");
+        var output = document.getElementById("output");
+        
+        function showResult(result) {
+            output.innerHTML = "answer: " + result;
+        }
+
+        function getSum() {
+            let sum = parseInt(firstNumber.value) + parseInt(secondNumber.value);
+            showResult(sum);
+        }
+
+        function getMinus() {
+            let sum = parseInt(firstNumber.value) - parseInt(secondNumber.value);
+            showResult(sum);
+        }
+
+        function getMulti() {
+            let sum = parseInt(firstNumber.value) * parseInt(secondNumber.value);
+            showResult(sum);
+        }
+
+        function getDivided() {
+            let sum = parseInt(firstNumber.value) / parseInt(secondNumber.value);
+            showResult(sum);
+        }
+    </script> -->
+</body>
+</html>

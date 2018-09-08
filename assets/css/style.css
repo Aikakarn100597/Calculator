@@ -1,0 +1,55 @@
+input {
+	width: 90%;
+	padding: 10px 20px 10px 10px;
+    margin: 8px 0;
+    font-size: 24px;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: thin;
+}
+
+h1 {
+    color: lightcoral;
+    text-align: center;
+    text-decoration: overline;
+}
+
+button {
+    background-color: white;
+    border-color: lightblue;
+    font-size: 30px;
+    border-radius: 4px;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+.main-container {
+	clear: both;
+	overflow: auto;
+	margin: 0 auto;
+    background-image: url("../images/bg.jpg");
+    background-size: contain;
+	height: 870px;
+	width: 100%;
+	border-bottom: 5px solid #68d3f3;
+}
+
+#output {
+    font-size: 30px;
+    text-align: center;
+}
+
+input[type=button], input[type=reset] {
+    background-color: #aed6f1;
+    border: 1px solid #34495e;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
